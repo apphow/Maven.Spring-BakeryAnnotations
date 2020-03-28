@@ -1,8 +1,10 @@
 package com.zipcodewilmington.bakery.models;
 
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
-
+@Entity
 public class Baker {
     private Long id;
 
@@ -26,6 +28,7 @@ public class Baker {
         this.specialty = specialty;
     }
 
+    @Id
     public Long getId() {
         return id;
     }
